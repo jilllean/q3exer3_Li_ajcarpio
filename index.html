@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var randomNum = Math.floor(Math.random()* 1001);
+        var hundredths = (Math.floor(randomNum / 100)) * 100;
+        var tenths = Math.floor((Math.floor(randomNum % 100))/ 10) * 10;
+        var ones = Math.floor(randomNum % 10);
+
+        var date = new Date(); 
+
+        document.write("Randomly generated number: " + randomNum + "<br>Breakdown: " + hundredths + ", " + tenths + ", " + ones + "<br>Date: " + date);
+    </script>
+</body>
+</html>
